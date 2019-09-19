@@ -1,24 +1,24 @@
 {
   "development": {
-    "username": "root",
-    "password": "admin",
+    "username": "",
+    "password": "",
     "database": "propmanage",
     "host": "127.0.0.1",
     "port": 3306,
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": "PASS",
-    "database": "database_test",
+    "username": "",
+    "password": "",
+    "database": "propmanage",
     "host": "127.0.0.1",
     "port": 3306,
     "dialect": "mysql"
   },
   "production": {
-    "username": "PASS",
-    "password": null,
-    "database": "database_production",
+    "username": "",
+    "password": "",
+    "database": "propmanage",
     "host": "127.0.0.1",
     "port": 3306,
     "dialect": "mysql"
