@@ -61,9 +61,10 @@ app.post("/api/send", function(req, res){
   host: 'smtp.mailgun.org',
   port: 587,
   secure: false, // true for 465, false for other ports
+//   the following will be added via dotenv:
   auth: {
-      user: 'postmaster@sandboxa252a024a103459f93073cdf662077c6.mailgun.org', // generated ethereal user
-      pass: '567c4c3ce48a8ce999d6c3bf0efaa277-2ae2c6f3-670e7f58'  // generated ethereal password
+      user: '', // generated ethereal user
+      pass: ''  // generated ethereal password
   },
   tls:{
     rejectUnauthorized:false
