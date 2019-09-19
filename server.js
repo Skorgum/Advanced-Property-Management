@@ -23,12 +23,14 @@ require("./routes/html-routes.js")(app);
 //JS routes not ready!!
 require("./routes/tenant-api-routes.js")(app);
 require("./routes/tickets-api-routes.js")(app);
+// require("./routes/")
 
 // placeholder name
 //var routes = require("./controllers/controller.js");
 
 //app.use(routes);
 
+// remove ({ force: true}) prior to deployment
 db.sequelize.sync({ force: true }).then(function () {
     app.listen(PORT2, function () {
         console.log("Server listening on: http://localhost:" + PORT);
