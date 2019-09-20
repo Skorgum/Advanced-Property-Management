@@ -1,5 +1,4 @@
 const express = require("express");
-const bodyParser = require("body-parser");
 const nodemailer = require ('nodemailer');
 const path = require('path');
 
@@ -9,13 +8,6 @@ var PORT2 = 3030
 var db = require("./models");
 //app.use(express.static(process.cwd() + "public"));
 app.use(express.static("public"));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-
-var exphbs = require("express-handlebars")
-
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
 
 //routes
 require("./routes/html-routes.js")(app);
@@ -23,7 +15,6 @@ require("./routes/html-routes.js")(app);
 //JS routes not ready!!
 require("./routes/tenant-api-routes.js")(app);
 require("./routes/tickets-api-routes.js")(app);
-// require("./routes/")
 
 // placeholder name
 //var routes = require("./controllers/controller.js");
