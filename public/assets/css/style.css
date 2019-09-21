@@ -15,6 +15,10 @@ a:active {
   text-decoration: none;
   color: #ffffff;
 }
+/* fix to keep the navbar over the animated div */
+  #navbarSupportedContent {
+    z-index: 9999;
+  }
 .hed3 {
   font-family: 'Livvic', sans-serif;
 }
