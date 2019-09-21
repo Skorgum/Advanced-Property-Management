@@ -23,7 +23,7 @@ require("./routes/tickets-api-routes.js")(app);
 
 // remove ({ force: true}) prior to deployment
 db.sequelize.sync({ force: true }).then(function () {
-    app.listen(PORT2, function () {
+    app.listen(PORT, function () {
         console.log("Server listening on: http://localhost:" + PORT);
     });
 });
@@ -85,9 +85,3 @@ transporter.sendMail(mailOptions, (error, info) => {
 });
 
 });
-
-
-app.listen(PORT, function() {
-    console.log("Server listening on: http://localhost:" + PORT);
-});
-
